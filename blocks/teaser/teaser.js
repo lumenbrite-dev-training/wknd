@@ -42,6 +42,7 @@ export default function decorate(block) {
   block.querySelector(':scope > div:last-child').classList.add('content');
   block.querySelector('h1,h2,h3,h4,h5,h6').classList.add('title');
   block.querySelector('img').classList.add('image');
+  block.querySelector('a').classList.add('button');
 
   // Process each paragraph and mark it as text or terms-and-conditions
   block.querySelectorAll('p').forEach((p) => {
